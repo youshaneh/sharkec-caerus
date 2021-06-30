@@ -1,0 +1,397 @@
+<html>
+
+<head>
+  <title>CAREUS</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="css/base-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+
+  <!--這裡是你的主要切版樣式-用到的外掛樣式(如果樣式有用到圖檔，
+        一律放到images裡面，如果你有改路徑名稱，記得ｃｓｓ也要修正)-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <!--這裡是你的主要切版樣式-用到的外掛樣式-->
+
+  <!--這裡是你的主要切版樣式-->
+  <link href="css/theme.css?t=20200405" rel="preload" as="style" type="style">
+  </link>
+  <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+  </link>
+  <!--/這裡是你的主要切版樣式-->
+
+  <script>
+    //為了不讓jq-core爆炸，我們有全域的js物件
+    var MYAPP = {
+
+    };
+  </script>
+  <script type="text/javascript" src="js/jq-core.js"></script>
+
+  <!--為了切版會用到的第三方jq外掛，請放至vendor下-->
+  <!--/為了切版會用到的第三方jq外掛，請放至vendor下-->
+
+  <!--以下theme.js就是切樣版要加code的地方-->
+  <script type="text/javascript" src="js/theme.js"></script>
+  <!--以下theme.js就是切樣版要加code的地方-->
+
+</head>
+
+<body>
+  <header>
+    <div class="navbar-dummy"></div>
+    <nav class="navbar-custom">
+      <a class="logo-link" title="Caerus 快樂撕 - 男士專業熱蠟除毛、男性除毛保養專家" href="">
+        <img class="logo" alt="Caerus 快樂撕 - 男士專業熱蠟除毛、男性除毛保養專家" data-nolazy src="./images/Caerus_cut_logo.png">
+      </a>
+      <div class="items font-26">
+        <a id="menu-reservation" class="item" href="">reservation</a>
+        <a id="menu-text" class="item" href="">menu</a>
+        <button id="menu-button"></button>
+      </div>
+      <div id="menu">
+        <ul>
+          <li id="about"><a href="#about-title"><img class="about" href=""></a></li>
+          <li id="space"><a href="#section-space-intro"><img class="space" href=""></a></li>
+          <li id="service"><a href="#section-service"><img class="service" href=""></a></li>
+          <li id="faq"><a href="#section-faq"><img class="faq" href=""></a></li>
+          <li id="reservation"><a href=""><img class="reservation" href=""></a></li>
+          <li id="cooperation"><a href=""><img class="cooperation" href=""></a></li>
+          <li id="blog"><a href=""><img class="blog" href=""></a></li>
+        </ul>
+        <div id="menu-back"></div>
+      </div>
+      <div id="lightbox2">
+        <div class="lightbox2-container">
+          <div class="logo"></div>
+          <div class="cooperation"></div>
+          <div class="cooperation-cn"></div>
+          <div class="cooperation-button"></div>
+        </div>
+        <div id="lightbox2-back"></div>
+      </div>
+      <div id="lightbox1">
+        <div class="lightbox1-container">
+          <div class="city-container taipei-city-container page0">
+            <div class="taipei-container city-grid">
+              <div class="city taipei"></div>
+              <div class="barnch renai">
+                <div class="right">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-11.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-12.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-13.png">
+                  <div class="address">台北市中正區金山南路一段70號</div>
+                </div>
+                <div class="left">
+                  <img class="name" src="./images/Caerus_cut_lightbox01-5.png">
+                  <img class="reserve" src="./images/Caerus_cut_lightbox01-10_click.png">
+                </div>
+              </div>
+              <div class="barnch zhongshan">
+                <div class="right">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-14.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-15.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-16.png">
+                  <div class="address">台北市中山區中山北路二段42巷32號2樓</div>
+                </div>
+                <div class="left">
+                  <img class="name" src="./images/Caerus_cut_lightbox01-6.png">
+                  <img class="reserve" src="./images/Caerus_cut_lightbox01-10_click.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="city-container page1">
+            <div class="taichung-container city-grid">
+              <div class="city taichung"></div>
+              <div class="barnch fengjia">
+                <div class="right">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-17.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-18.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-19.png">
+                  <div class="address">台中市西屯區漢翔北街47號</div>
+                </div>
+                <div class="left">
+                  <img class="name" src="./images/Caerus_cut_lightbox01-7.png">
+                  <img class="reserve" src="./images/Caerus_cut_lightbox01-10_click.png">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="city-container page2">
+            <div class="tainan-container city-grid">
+              <div class="city tainan"></div>
+              <div class="barnch park">
+                <div class="right">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-20.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-21.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-22.png">
+                  <div class="address">台南市北區北華街106號</div>
+                </div>
+                <div class="left">
+                  <img class="name" src="./images/Caerus_cut_lightbox01-8.png">
+                  <img class="reserve" src="./images/Caerus_cut_lightbox01-10_click.png">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="city-container page3">
+            <div class="kaohsiung-container city-grid">
+              <div class="city kaohsiung"></div>
+              <div class="barnch zhisheng">
+                <div class="right">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-23.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-24.png">
+                  <img class="pic" src="./images/Caerus_cut_lightbox01-25.png">
+                  <div class="address">高雄市左營區至聖路262號</div>
+                </div>
+                <div class="left">
+                  <img class="name" src="./images/Caerus_cut_lightbox01-9.png">
+                  <img class="reserve" src="./images/Caerus_cut_lightbox01-10_click.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="lightbox1-left" class="lightbox1-arrow"></div>
+        <div id="lightbox1-right" class="lightbox1-arrow"></div>
+        <div id="lightbox1-back"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-cover">
+    <div class="background"></div>
+    <img class="title" src="./images/Caerus_cut_01-1.png">
+    <div class="arrow">
+      <div class="arrow-text font-26">
+        專為頂級男士打造的熱蠟除毛空間
+        <div class="arrow-icon-container">
+          <img class="arrow-icon" src="./images/Caerus_cut_01-bt_click.png">
+        </div>
+      </div>
+    </div>
+    <div class="origin font-20">
+      <p>
+        在希臘神話中有一位人稱「機會之神」的Caerus，這個機會之神長得很奇怪，頭髮長在前面像瀏海一樣，全身光滑無比，兩腿和背上還有翅膀，所以祂跑得飛快。
+      </p>
+      <p>
+        當祂過來時如果馬上拉住祂前面的頭髮，就能夠抓住祂，若沒及時抓住，等祂轉過身去，就再也沒有機會抓住了，因為祂唯一能抓住的地方只有前額的頭髮而已。
+      </p>
+      <img class="give-yourself-a-chance" src="./images/Caerus_cut_02-2.png">
+    </div>
+    <div class="about font-20-bigger">
+      <img id="about-title" class="title" src="./images/Caerus_cut_02-1.png">
+      <p>
+        Caerus成立於2017年，我們將其直翻為快樂撕，幫你撕去所有的不快樂！<br />我們選用義大利熱蠟品牌－RICA，專屬男性除毛的熱蠟體驗，為你做好第一線的把關。
+      </p>
+    </div>
+  </section>
+
+  <section id="section-space-intro" class="section-space-intro">
+    <div class="title-container">
+      <img class="title" />
+    </div>
+    <div class="space-container">
+      <img class="space" />
+    </div>
+    <div id="marquee"><span class="marquee-pic pic3"></span><span class="marquee-pic pic4"></span><span
+        class="marquee-pic pic5"></span><span class="marquee-pic pic6"></span><span
+        class="marquee-pic pic7"></span><span class="marquee-pic pic3"></span><span
+        class="marquee-pic pic4"></span><span class="marquee-pic pic5"></span><span
+        class="marquee-pic pic6"></span><span class="marquee-pic pic7"></span></div>
+  </section>
+
+  <section class="section-material">
+    <div class="background"></div>
+    <div class="title-container">
+      <img class="title" src="./images/Caerus_cut_04-1.png" />
+    </div>
+    <div class="content font-20-bigger">
+      我們與您一樣只追求最高最好，熱蠟採用義大利綠色精品－RICA。<br />
+      RICA享譽全球80多國，全系列精品男性除毛蠟採用西西里頂級珍稀天然純淨成份，擁有多項獨家專利科技，以綿密奢華的乳霜質地打造絕佳毛髮吸附力。<br />
+      全系列專利低敏成份，細心呵護敏感肌，讓男性除毛從開始就擁有高級舒適的新感受與頂級肌膚保養感受。
+    </div>
+  </section>
+
+  <section id="section-service" class="section-service font-20-bigger">
+    <img class="title" src="./images/Caerus_cut_05-1.png" />
+    <div class="private"></div>
+    <div class="private-title"></div>
+    <div class="private-content">
+      <div class="plan plan-a">A.</div>
+      <div class="plan-a-price">經典計畫 NT$2,700</div>
+      <div class="description plan-a-description">前私密處 您可（複）選陰囊、陰莖、鼠蹊部</div>
+      <div class="plan plan-b">B.</div>
+      <div class="plan-b-price">舒適計畫 NT$1,200</div>
+      <div class="description plan-b-description">後私密處 您可（複）選臀瓣、肛門</div>
+      <div class="plan plan-c">C.</div>
+      <div class="plan-c-price">完美計畫 NT$3,500</div>
+      <div class="description plan-c-description">經典＋舒適 全私密處</div>
+    </div>
+    <div class="limb"></div>
+    <div class="limb-title"></div>
+    <div class="limb-content">
+      <div>前手臂 NT$1,200</div>
+      <div>上手臂 NT$1,200</div>
+      <div>全手 NT$1,800</div>
+      <div>小腿 NT$1,500</div>
+      <div>大腿 NT$1,500</div>
+      <div>全腿 NT$2,500</div>
+    </div>
+    <div class="torso"></div>
+    <div class="torso-title"></div>
+    <div class="torso-content">
+      <div>乳頭 NT$600</div>
+      <div>胸部 NT$1,000</div>
+      <div>腹部 NT$1,000</div>
+      <div>腋下 NT$900</div>
+    </div>
+    <div class="face"></div>
+    <div class="face-title"></div>
+    <div class="face-content">
+      <div>鼻毛 NT$600</div>
+      <div>眉毛 NT$600</div>
+      <div>全臉 NT$3,500</div>
+      <div>鬍子(臉頰/脖子另計) NT$2,000</div>
+    </div>
+  </section>
+
+  <section id="section-faq" class="section-faq">
+    <div class="title"></div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">為什麼男性除毛要使用熱蠟？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            除去多餘的毛髮，不僅顯得乾淨俐落，還可減少異味，甚至會讓運動進行得更順暢，亦無需修復期。<br />
+            身體上較粗硬的毛髮，是人類演化過程中為了減少其部位摩擦而產生的，然現今已有衣物及內衣褲作保護，因此減去毛量反倒俐落許多。<br />
+            汗水悶在毛髮中，易使細菌滋生產生異味，為了減少異味的產生，許多毛量較多的男性也都會選擇熱蠟除毛，若使用刮鬍刀，容易導致刮除後留下的粗黑毛根摩擦肌膚而導致刺癢。<br />
+            巴西式全除現今已是陽光運動男孩的指標，在健身房中舉手投足間都能展現更清晰的線條；和另一半親密互動時，除了視覺上美觀，保持清爽及無異味更是眾所追求的，因此快樂撕注重種種細節，為了成就不凡的你！
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">做過一次熱蠟男性除毛就不會再長了嗎？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            毛髮的延緩及生長抑制會隨著熱蠟除毛的次數增多而愈趨明顯。而比起刮除毛髮，熱蠟除毛後所生長的毛髮，除了會更加纖細、柔軟，毛量還會大幅減少，接受愈多次正確的除毛服務，延緩毛髮生長的效果也會愈好。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">熱蠟男性除毛是否會導致紅腫癢？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            快樂撕使用西西里頂級天然純淨成分之義大利綠色精品RICA除毛蠟，全系列專利低敏成份，質地溫和不刺激，更適用於敏感性肌膚。而脫毛後會產生的泛紅現象，是肌膚的一種防禦機制，因體質的不同而影響退紅速度。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">熱蠟男性除毛會痛嗎？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            熱蠟除毛在上蠟過程有溫熱感，撕除時則有拔除毛髮的微痛感，疼痛程度會依每個人的感受而有不同，透過快樂撕專業的手法必能給你最舒適的除毛服務。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">我現在的狀態可以進行男性除毛嗎？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            屬於敏感肌且對「熱」過敏的族群請先告知快樂撕除毛師，特別是欲除毛的部位，在除毛前的一週不可進行任何刺激性的皮膚護理與保養療程，且毛髮需有一定長度（多於0.3cm）以便順利進行操作。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">我可以選擇如何修嗎？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            熱蠟除毛是將多餘毛量去除及延緩生長，因此快樂撕可以依照客人的需求決定。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">熱蠟男性除毛後我要注意什麼？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            除毛後一週需加強保濕，避免可能造成感染或刺激皮膚的行為，如至大眾池、三溫暖及烤箱，或接觸到不乾淨的水質。
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="question-container font-20-bigger">
+      <div class="question"><span class="question-content">熱蠟男性除毛一次可以維持多久？</span></div>
+      <div class="answer-container">
+        <div class="answer">
+          <span class="answer-content">
+            建議第一次接觸熱蠟除毛的你，在六週內應接受快樂撕下一次的服務，才能有效延緩及抑制毛髮生長，進而達到減量的效果，否則因毛髮生長週期的不同，除毛後幾天會冒出些原本就要長出的毛髮（意即在表皮下即將生長的毛髮）是熱蠟無法除去的。而已去除的毛髮若要長回原本的量，至少需要一個月到一個半月，根據不同體質減量的效果也會有些差異。
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="section-footer" id="section-stores">
+    <div class="container1">
+      <div class="container2">
+        <div class="container3">
+          <img class="logo2" alt="CAREUS" src="./images/footer-logo.png">
+          <a class="reserve">
+            <img class="reserve-btn" alt="reserve" src="./images/footer-bt.png">
+          </a>
+          <img class="change-now" alt="change now" src="./images/footer-01.png">
+          <div class="copyright">Copyright ©caerus.com.tw All Rights Reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer>
+    <div class="logo"></div>
+    <div class="everyone-is-vip font-20-bigger">
+      你沒注意到的我們都替你準備好<br />
+      讓每位進來的你都成為我們的 VIP<br />
+      完美體驗是我們的堅持，每次服務都是我們的歷練
+    </div>
+    <div class="reservation-text"></div>
+    <div id="footer-reservation" class="reservation"></div>
+    <div class="college"></div>
+    <div class="aestheticiants font-20-bigger">
+      在義大利，男性除毛師又被稱為 Aestheticiants (美學師)<br />
+      一位優秀的 Aestheticiants 需要具備由內而外的美學與皮膚知識，對於客人的毛髮生長方向、到如何安撫、放鬆客人的心情，以舒適的手法，打造最細緻的私密肌膚。<br />
+      快樂撕提供最完善的教學制度，標準的流程考核，從學院至實習到能夠獨當一面的美學師，提供最舒適的訓練環境與完整的耗材工具，加上 RICA 原廠教育認證師資，一起以細節，成就不凡的你我。
+    </div>
+    <div class="blog"></div>
+    <div class="copyright font-20-bigger">Copyright ©caerus.com.tw All Rights Reserved.</div>
+  </footer>
+
+</body>
+
+</html>

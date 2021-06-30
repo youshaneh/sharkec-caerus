@@ -1,0 +1,1033 @@
+* {
+  font-family: "Noto Sans TC";
+}
+
+.font-26 {
+  font-size: 26px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-20-bigger {
+  font-size: 20px;
+}
+
+.navbar-custom #lightbox1 .lightbox1-container .barnch .right .address {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.navbar-dummy {
+  width: 100%;
+  height: 130px;
+  background-color: #697164;
+}
+
+.navbar-custom {
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr;
+  width: 100%;
+  height: 130px;
+  padding: 0 6%;
+  background-color: #697164;
+  grid-template-areas: "logo void items";
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+  position: absolute;
+  align-items: flex-start;
+}
+.navbar-custom.minimize {
+  top: -250px;
+}
+.navbar-custom .logo-link {
+  align-self: center;
+}
+.navbar-custom .logo {
+  grid-area: logo;
+  width: 150px;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+}
+.navbar-custom .items {
+  grid-area: items;
+  width: 100%;
+  align-self: center;
+  text-align: end;
+  font-weight: 100;
+}
+.navbar-custom .items .item {
+  color: #C19A5B;
+  margin-left: 15%;
+}
+.navbar-custom .items .item:first-child {
+  margin-left: 0;
+}
+.navbar-custom .items #menu-text {
+  display: inline-block;
+}
+.navbar-custom .items #menu-button {
+  display: none;
+  border: none;
+  background-color: #0000;
+  width: 77px;
+  height: 29px;
+  margin-top: 25px;
+  background-image: url("../images/Caerus_m_cut_01-menu_click.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.3s;
+}
+@media (hover: hover) {
+  .navbar-custom .items #menu-button:hover {
+    background-image: url("../images/Caerus_m_cut_01-menu_hover.png");
+  }
+}
+.navbar-custom #menu {
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Caerus_cut_menu_full.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: 0.3s;
+}
+.navbar-custom #menu ul {
+  height: 100%;
+  padding: 6vh 0 5vh 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-custom #menu ul li {
+  list-style-type: none;
+  width: fit-content;
+  height: 5vh;
+}
+.navbar-custom #menu ul li a {
+  display: inline-block;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.navbar-custom #menu ul li a img {
+  height: 100%;
+  width: auto;
+}
+.navbar-custom #menu ul li a .about {
+  content: url("../images/Caerus_cut_menu_list1.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .about:hover {
+    content: url("../images/Caerus_cut_menu_list1_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .space {
+  content: url("../images/Caerus_cut_menu_list2.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .space:hover {
+    content: url("../images/Caerus_cut_menu_list2_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .service {
+  content: url("../images/Caerus_cut_menu_list3.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .service:hover {
+    content: url("../images/Caerus_cut_menu_list3_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .faq {
+  content: url("../images/Caerus_cut_menu_list4.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .faq:hover {
+    content: url("../images/Caerus_cut_menu_list4_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .reservation {
+  content: url("../images/Caerus_cut_menu_list5.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .reservation:hover {
+    content: url("../images/Caerus_cut_menu_list5_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .cooperation {
+  content: url("../images/Caerus_cut_menu_list6.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .cooperation:hover {
+    content: url("../images/Caerus_cut_menu_list6_hover.png");
+  }
+}
+.navbar-custom #menu ul li a .blog {
+  content: url("../images/Caerus_cut_menu_list7.png");
+}
+@media (hover: hover) {
+  .navbar-custom #menu ul li a .blog:hover {
+    content: url("../images/Caerus_cut_menu_list7_hover.png");
+  }
+}
+.navbar-custom #menu #menu-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 9vh;
+  height: 9vh;
+  margin: 9vh 9vh;
+  background-image: url("../images/Caerus_cut_menu_bt.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #menu.expanded {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar-custom #lightbox1 {
+  z-index: 3;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-custom #lightbox1 .lightbox1-container {
+  width: 85%;
+  height: 50vw;
+  margin-top: 9%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.navbar-custom #lightbox1 .lightbox1-container .city-container {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  overflow: visible;
+  white-space: normal;
+}
+.navbar-custom #lightbox1 .lightbox1-container .city-container.taipei-city-container {
+  width: 40%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .city-grid {
+  grid-template-rows: 1.2fr 5fr;
+}
+.navbar-custom #lightbox1 .lightbox1-container .taipei-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "taipei taipei" "renai zhongshan";
+}
+.navbar-custom #lightbox1 .lightbox1-container .taichung-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "taichung" "fengjia";
+}
+.navbar-custom #lightbox1 .lightbox1-container .tainan-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "tainan" "park";
+}
+.navbar-custom #lightbox1 .lightbox1-container .kaohsiung-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-template-areas: "kaohsiung" "zhisheng";
+}
+.navbar-custom #lightbox1 .lightbox1-container .city {
+  width: 100%;
+  height: 100%;
+  align-self: flex-end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0 18% 0 4%;
+  margin-top: 20%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .right {
+  grid-area: 1/2/2/3;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .right .pic {
+  height: auto;
+  width: 100%;
+  padding: 0 1% 2% 1%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .right .address {
+  margin-top: 10%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .left {
+  grid-area: 1/1/2/2;
+  padding-right: 20%;
+  text-align: center;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .left .name {
+  height: auto;
+  width: 60%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .left .reserve {
+  margin-top: 90%;
+  height: auto;
+  width: 100%;
+}
+.navbar-custom #lightbox1 .lightbox1-container .barnch .left .reserve:hover {
+  content: url(../images/Caerus_cut_lightbox01-10_hover.png);
+}
+.navbar-custom #lightbox1 .lightbox1-container .taipei {
+  grid-area: taipei;
+  background-image: url("../images/Caerus_cut_lightbox01-1.png");
+  background-position: 48% center;
+}
+.navbar-custom #lightbox1 .lightbox1-container .taichung {
+  grid-area: taichung;
+  background-image: url("../images/Caerus_cut_lightbox01-2.png");
+}
+.navbar-custom #lightbox1 .lightbox1-container .tainan {
+  grid-area: tainan;
+  background-image: url("../images/Caerus_cut_lightbox01-3.png");
+}
+.navbar-custom #lightbox1 .lightbox1-container .kaohsiung {
+  grid-area: kaohsiung;
+  background-image: url("../images/Caerus_cut_lightbox01-4.png");
+}
+.navbar-custom #lightbox1 .lightbox1-container .renai {
+  grid-area: renai;
+}
+.navbar-custom #lightbox1 .lightbox1-container .zhongshan {
+  grid-area: zhongshan;
+}
+.navbar-custom #lightbox1 .lightbox1-container .fengjia {
+  grid-area: fengjia;
+}
+.navbar-custom #lightbox1 .lightbox1-container .park {
+  grid-area: park;
+}
+.navbar-custom #lightbox1 .lightbox1-container .zhisheng {
+  grid-area: zhisheng;
+}
+.navbar-custom #lightbox1 #lightbox1-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4vh;
+  height: 4vh;
+  margin: 6vh 6vh;
+  background-image: url("../images/Caerus_m_cut_lightbox02_cencle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox1.expanded {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar-custom #lightbox1 .lightbox1-arrow {
+  display: none;
+}
+.navbar-custom #lightbox2 {
+  z-index: 3;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #C19A5B;
+  opacity: 0;
+  transition: 0.3s;
+}
+.navbar-custom #lightbox2 .lightbox2-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23vh 0;
+}
+.navbar-custom #lightbox2 .lightbox2-container .logo {
+  width: 100%;
+  height: 7vw;
+  background-image: url(../images/Caerus_cut_lightbox02-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox2 .lightbox2-container .cooperation {
+  width: 100%;
+  height: 15vw;
+  margin-top: 5vh;
+  background-image: url(../images/Caerus_cut_lightbox02-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox2 .lightbox2-container .cooperation-cn {
+  display: none;
+}
+.navbar-custom #lightbox2 .lightbox2-container .cooperation-button {
+  margin-top: 4.2vw;
+  width: 15vw;
+  height: 15vw;
+  background-image: url(../images/Caerus_cut_lightbox02-3_click.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox2 .lightbox2-container .cooperation-button:hover {
+  background-image: url(../images/Caerus_cut_lightbox02-3_hover.png);
+}
+.navbar-custom #lightbox2 #lightbox2-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4vh;
+  height: 4vh;
+  margin: 6vh 6vh;
+  background-image: url("../images/Caerus_m_cut_lightbox02_cencle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.navbar-custom #lightbox2.expanded {
+  visibility: visible;
+  opacity: 1;
+}
+
+.section-cover {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 2fr 6fr;
+  width: 100%;
+  height: 98vw;
+  padding: 0 6%;
+  background-color: #697164;
+  grid-template-areas: "title title" "arrow arrow" "about cover-right";
+}
+.section-cover * {
+  z-index: 1;
+}
+.section-cover .background {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Caerus_cut_01-2.png");
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  background-position: 13% 0;
+}
+.section-cover .title {
+  grid-area: title;
+  width: 80%;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+}
+.section-cover .arrow {
+  grid-area: arrow;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.section-cover .arrow .arrow-text {
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #C19A5B;
+}
+.section-cover .arrow .arrow-icon-container {
+  margin-top: 9%;
+  text-align: center;
+  height: 36px;
+}
+.section-cover .arrow .arrow-icon-container .arrow-icon {
+  height: auto;
+  width: 9%;
+  max-width: 36px;
+}
+.section-cover .arrow .arrow-icon-container .arrow-icon:hover {
+  content: url("../images/Caerus_cut_01-bt_hover.png");
+}
+.section-cover .origin {
+  grid-area: cover-right;
+  width: 100%;
+  align-self: flex-start;
+  justify-self: center;
+  padding-left: 17%;
+  padding-right: 7%;
+}
+.section-cover .origin p {
+  color: #fff;
+  line-height: 2em;
+  font-weight: 100;
+  letter-spacing: 0.14em;
+  margin: 6% 0;
+}
+.section-cover .origin .give-yourself-a-chance {
+  width: 95%;
+  max-width: 435px;
+  height: auto;
+}
+.section-cover .about .title {
+  width: 100%;
+  height: auto;
+  padding: 7% 6% 0 8%;
+}
+.section-cover .about p {
+  color: #fff;
+  line-height: 2em;
+  font-weight: 100;
+  letter-spacing: 0.14em;
+  margin: 6% 0 0 9%;
+}
+
+.section-space-intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 13% 5% 4% 7%;
+  height: 56vw;
+  background-color: #D7D7DC;
+}
+.section-space-intro .title-container {
+  z-index: 1;
+  width: 65%;
+  margin-bottom: 7%;
+}
+.section-space-intro .title-container .title {
+  width: 100%;
+  height: auto;
+  content: url("../images/Caerus_cut_03-1.png");
+}
+.section-space-intro .space-container {
+  z-index: 1;
+  padding-top: 1%;
+  width: 55%;
+}
+.section-space-intro .space-container .space {
+  width: 100%;
+  height: auto;
+  content: url("../images/Caerus_cut_03-2.png");
+}
+.section-space-intro #marquee {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 8%;
+  width: 100%;
+  height: 68%;
+  white-space: nowrap;
+}
+.section-space-intro #marquee .marquee-pic {
+  display: inline-block;
+  height: 100%;
+  width: 34vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.section-space-intro #marquee .pic3 {
+  background-image: url("../images/Caerus_cut_03-3.png");
+}
+.section-space-intro #marquee .pic4 {
+  background-image: url("../images/Caerus_cut_03-4.png");
+}
+.section-space-intro #marquee .pic5 {
+  background-image: url("../images/Caerus_cut_03-5.png");
+}
+.section-space-intro #marquee .pic6 {
+  background-image: url("../images/Caerus_cut_03-6.png");
+}
+.section-space-intro #marquee .pic7 {
+  background-image: url("../images/Caerus_cut_03-7.png");
+}
+
+.section-material {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2% 2% 2% 20%;
+  height: 55vw;
+}
+.section-material * {
+  z-index: 1;
+}
+.section-material .background {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Caerus_cut_04-2.png");
+  background-size: auto 84%;
+  background-repeat: no-repeat;
+  background-position: 9% center;
+}
+.section-material .title-container {
+  width: 81%;
+  margin-right: 10.5%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.section-material .title-container .title {
+  width: 100%;
+  height: auto;
+}
+.section-material .content {
+  margin-right: 10%;
+  flex-grow: 1;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 2em;
+  letter-spacing: 0.08em;
+  color: #697164;
+  font-weight: 100;
+}
+
+.section-service {
+  display: grid;
+  grid-template-columns: 4fr 1fr 2fr 1fr [left-end] 1fr [right-start] 1fr 7fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 2fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr;
+  width: 100%;
+  height: 120vw;
+  background-color: #697164;
+  font-weight: 100;
+  color: #fff;
+}
+.section-service .title {
+  z-index: 1;
+  justify-self: center;
+  align-self: flex-end;
+  grid-area: 1/1/3/5;
+  width: 60%;
+  height: auto;
+}
+.section-service .private {
+  background-image: url("../images/Caerus_cut_05-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-area: 1/6/4/8;
+  width: 100%;
+  height: 100%;
+}
+.section-service .private-title {
+  z-index: 1;
+  background-image: url("../images/Caerus_cut_05-7.png");
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  grid-area: 3/right-start/6/7;
+  width: 100%;
+  height: 100%;
+}
+.section-service .private-content {
+  grid-area: 4/7/6/8;
+  display: grid;
+  grid-template-columns: auto auto 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1%;
+  width: 100%;
+  height: 75%;
+  align-items: center;
+  padding: 1% 0;
+}
+.section-service .private-content .plan {
+  color: #C19A5B;
+}
+.section-service .private-content .description {
+  padding-left: 4%;
+}
+.section-service .private-content .plan-a {
+  grid-area: 1/1/2/2;
+}
+.section-service .private-content .plan-b {
+  grid-area: 2/1/3/2;
+}
+.section-service .private-content .plan-c {
+  grid-area: 3/1/4/2;
+}
+.section-service .private-content .plan-a-price {
+  grid-area: 1/2/2/3;
+}
+.section-service .private-content .plan-b-price {
+  grid-area: 2/2/3/3;
+}
+.section-service .private-content .plan-c-price {
+  grid-area: 3/2/4/3;
+}
+.section-service .limb {
+  background-image: url("../images/Caerus_cut_05-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-area: 2/1/6/5;
+  width: 100%;
+  height: 100%;
+}
+.section-service .limb-title {
+  z-index: 1;
+  background-image: url("../images/Caerus_cut_05-6.png");
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  grid-area: 5/4/7/left-end;
+  width: 100%;
+  height: 100%;
+}
+.section-service .limb-content {
+  grid-area: 6/5/7/8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: 0.5%;
+  height: 10vw;
+  padding: 1% 0;
+}
+.section-service .limb-content div {
+  height: 33%;
+  width: fit-content;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+.section-service .torso {
+  background-image: url("../images/Caerus_cut_05-4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-area: 7/1/10/5;
+  width: 100%;
+  height: 100%;
+}
+.section-service .torso-title {
+  z-index: 1;
+  background-image: url("../images/Caerus_cut_05-8.png");
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  grid-area: 9/2/12/3;
+  width: 100%;
+  height: 100%;
+}
+.section-service .torso-content {
+  grid-area: 10/3/12/6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 75%;
+  padding: 4% 0;
+}
+.section-service .torso-content div {
+  height: 50%;
+  width: fit-content;
+  margin-right: 10%;
+  display: flex;
+  align-items: center;
+}
+.section-service .face {
+  background-image: url("../images/Caerus_cut_05-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-area: 8/6/12/8;
+  width: 100%;
+  height: 100%;
+}
+.section-service .face-title {
+  z-index: 1;
+  background-image: url("../images/Caerus_cut_05-9.png");
+  background-size: 70% auto;
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  grid-area: 11/right-start/13/7;
+  width: 100%;
+  height: 100%;
+}
+.section-service .face-content {
+  grid-area: 12/7/13/14;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 75%;
+  padding: 2% 0;
+}
+.section-service .face-content div {
+  height: 50%;
+  width: fit-content;
+  margin-right: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.section-faq .title {
+  background-image: url("../images/Caerus_cut_06-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 7vw;
+  margin: 4.2% 0 3% 0;
+}
+.section-faq .question-container {
+  position: relative;
+  cursor: pointer;
+  margin: 1% 10% 0 10%;
+  padding: 2.5% 5% 1% 2%;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  border-bottom: 1px solid #C19A5B;
+}
+.section-faq .question-container .question {
+  position: relative;
+  width: 100%;
+  font-size: 26px;
+  color: #C19A5B;
+}
+.section-faq .question-container .question .question-content {
+  display: inline-block;
+  margin-left: 4%;
+}
+.section-faq .question-container .question .question-content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2.5%;
+  height: 100%;
+  background-image: url(../images/Caerus_cut_06-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-faq .question-container .answer {
+  position: relative;
+  width: 100%;
+  color: #697164;
+}
+.section-faq .question-container .answer .answer-content {
+  display: inline-block;
+  margin-left: 4%;
+  padding: 2% 0 1% 0;
+}
+.section-faq .question-container .answer .answer-content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2.5%;
+  height: 100%;
+  background-image: url(../images/Caerus_cut_06-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-faq .question-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 0.2%;
+  transform: translateY(-1.2vw);
+  width: 1.7%;
+  height: 100%;
+  background-image: url(../images/Caerus_cut_06-5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+}
+.section-faq .question-container.expanded::after {
+  background-image: url(../images/Caerus_cut_06-4.png);
+}
+
+footer {
+  margin-top: 8vw;
+  background-image: url(../images/Caerus_cut_07-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 112vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 11.5% 0 9.5% 0;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+footer .logo {
+  width: 100%;
+  height: 6.8vw;
+  background-image: url(../images/Caerus_cut_07-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+footer .everyone-is-vip {
+  padding-top: 1.6%;
+  width: 100%;
+  height: 11vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2em;
+}
+footer .reservation-text {
+  width: 100%;
+  height: 1.3vw;
+  background-image: url(../images/Caerus_cut_07-2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+footer .reservation {
+  margin-top: 4.2vw;
+  width: 6.5vw;
+  height: 6.5vw;
+  background-image: url(../images/Caerus_cut_07-3_click.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+footer .reservation:hover {
+  background-image: url(../images/Caerus_cut_07-3_hover.png);
+}
+footer .college {
+  flex-grow: 1;
+  width: 33%;
+  background-image: url(../images/Caerus_cut_08-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+}
+footer .aestheticiants {
+  padding-top: 1.6%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  line-height: 2em;
+}
+footer .blog {
+  margin-top: 2.6vw;
+  margin-bottom: 3.4vw;
+  width: 6.5vw;
+  height: 6.5vw;
+  background-image: url(../images/Caerus_cut_08-2_click.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+footer .blog:hover {
+  background-image: url(../images/Caerus_cut_08-3_hover.png);
+}
+footer .copyright {
+  text-align: center;
+  font-weight: 300;
+}
+
+.section-footer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 37.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/footer_bg.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-footer .container1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-footer .container1 .container2 {
+  width: 100%;
+  height: 100%;
+}
+.section-footer .container1 .container2 .container3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.section-footer .container1 .container2 .container3 .logo2 {
+  margin-top: 9.5%;
+  width: 16%;
+}
+.section-footer .container1 .container2 .container3 .reserve .reserve-btn {
+  margin-top: 53%;
+  width: 8vw;
+}
+.section-footer .container1 .container2 .container3 .change-now {
+  margin-top: 2.3%;
+  width: 17vw;
+}
+.section-footer .container1 .container2 .container3 .copyright {
+  margin-top: 5%;
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+}

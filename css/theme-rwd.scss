@@ -1,0 +1,916 @@
+@media (max-width: 1599px) {
+  .font-20 {
+    font-size: 18px;
+  }
+
+  .font-20-bigger {
+    font-size: 18px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .font-20 {
+    font-size: 15px;
+  }
+
+  .font-20-bigger {
+    font-size: 15px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .font-26 {
+    font-size: 21px;
+  }
+
+  .font-20 {
+    font-size: 14px;
+  }
+
+  .font-20-bigger {
+    font-size: 14px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 20px;
+  }
+
+  .navbar-custom #lightbox1 .lightbox1-container .barnch .right .address {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1045px) {
+  .font-20 {
+    font-size: 12px;
+  }
+
+  .font-20-bigger {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .font-26 {
+    font-size: 16px;
+  }
+
+  .font-20 {
+    font-size: 11px;
+  }
+
+  .font-20-bigger {
+    font-size: 10px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .font-26 {
+    font-size: 21px;
+  }
+
+  .font-20 {
+    font-size: 16px;
+  }
+
+  .font-20-bigger {
+    font-size: 20px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 22px;
+  }
+
+  .navbar-custom #lightbox1 .lightbox1-container .barnch .right .address {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .font-26 {
+    font-size: 14px;
+  }
+
+  .font-20 {
+    font-size: 10px;
+  }
+
+  .font-20-bigger {
+    font-size: 11px;
+  }
+
+  .section-faq .question-container .question {
+    font-size: 16px;
+  }
+
+  .navbar-custom #lightbox1 .lightbox1-container .barnch .right .address {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .navbar-custom {
+    grid-template-columns: 150px 4fr 100px;
+    grid-template-areas: "logo void items";
+    padding: 0 32px 0 44px;
+
+    .logo {
+      justify-self: center;
+    }
+
+    .items {
+      justify-self: center;
+      text-align: center;
+      padding-bottom: 10px;
+
+      .item {
+        display: block;
+      }
+
+      #menu-text {
+        display: none;
+      }
+
+      #menu-button {
+        display: inline-block;
+
+      }
+    }
+
+    #menu {
+      ul {
+        height: 100%;
+        padding: 9vh 0 6vh 0;
+
+        li {
+          height: 4.2vh;
+        }
+      }
+
+      #menu-back {
+        width: 8vh;
+        height: 8vh;
+        margin: 4vh 4vh;
+      }
+    }
+
+    #lightbox2 {
+      .lightbox2-container {
+        align-items: center;
+        padding: 24vh 4vw 0 4vw;
+
+        .logo {
+          width: 100%;
+          height: 7vh;
+        }
+
+        .cooperation {
+          width: 100%;
+          height: 5vh;
+          margin-top: 5vh;
+          background-image: url(../images/Caerus_cut_menu_list6.png);
+        }
+
+        .cooperation-cn {
+          display: block;
+          width: 100%;
+          height: 3.5vh;
+          margin-top: 3vh;
+          background-image: url(../images/Caerus_cut_menu_list6_hover.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        .cooperation-button {
+          margin-top: 16vh;
+          width: 15vh;
+          height: 15vh;
+        }
+      }
+
+      #lightbox2-back {
+        width: 3vh;
+        height: 3vh;
+        margin: 3.5vh 3.5vh;
+      }
+    }
+
+    #lightbox1 {
+      z-index: 3;
+      visibility: hidden;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      opacity: 0;
+      transition: .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .lightbox1-container {
+        width: 78%;
+        height: 140vw;
+        min-height: 515px;
+        max-height: 900px;
+        margin-top: 1%;
+        align-items: center;
+        justify-content: center;
+
+        .city-container {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          overflow: visible;
+          white-space: normal;
+
+          &.taipei-city-container {
+            width: 100%;
+            transition: margin .3s;
+          }
+        }
+
+        .city-grid {
+          grid-template-rows: 1fr 5fr;
+        }
+
+        .city {
+          width: 100%;
+          height: 100%;
+          align-self: flex-end;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
+        .barnch {
+          overflow: hidden;
+          width: 35%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 3fr;
+          padding: 0;
+          padding-top: 5%;
+          margin-top: 10%;
+          justify-self: center;
+
+          .right {
+            grid-area: 2 / 1 / 3 / 2;
+
+            .pic {
+              height: auto;
+              width: 100%;
+              padding: 0 1% 2% 1%;
+            }
+
+            .address {
+              margin-top: 10%;
+            }
+          }
+
+          .left {
+            height: 18vw;
+            grid-area: 1 / 1 / 2 / 2;
+            padding: 0 20% 0 25%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .name {
+              height: 100%;
+              width: auto;
+            }
+
+            .reserve {
+              margin-top: 0;
+              height: auto;
+              width: 35%;
+            }
+          }
+
+          &.renai,
+          &.zhongshan {
+            width: 70%;
+            padding-top: 10%;
+            margin-top: 20%;
+          }
+        }
+
+        .taipei {
+          background-position: center center;
+        }
+      }
+
+      #lightbox1-back {
+        width: 3vh;
+        height: 3vh;
+        margin: 3.5vh 3.5vh;
+      }
+
+      &.expanded {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .lightbox1-arrow {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 12vw;
+        height: 100%;
+        background-size: 35% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      #lightbox1-left {
+        left: 0;
+        background-image: url("../images/Caerus_m_cut_lightbox02_previous.png");
+      }
+
+      #lightbox1-right {
+        right: 0;
+        background-image: url("../images/Caerus_m_cut_lightbox02_next.png");
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {}
+
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .section-cover {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.7fr 1.3fr 1.3fr;
+    height: auto;
+    padding: 16% 6% 0 6%;
+    grid-template-areas:
+      "title"
+      "arrow"
+      "cover-right"
+      "about";
+
+    .background {
+      background-size: auto 83.5%;
+      background-repeat: no-repeat;
+      background-position: center 0;
+
+    }
+
+    .title {
+      width: 80%;
+      padding: 30% 0 0 0;
+      content: url("../images/Caerus_m_cut_01-2.png");
+    }
+
+    .arrow {
+      align-self: end;
+      padding-bottom: 10%;
+
+      .arrow-icon {
+        margin: 20px auto 0 auto;
+      }
+    }
+
+    .origin {
+      align-self: center;
+      padding: 0 20%;
+
+      p {
+        margin: 7% 2%;
+      }
+    }
+
+    .about {
+      .title {
+        padding: 10% 28% 0 2%;
+        content: url("../images/Caerus_m_cut_02-1.png");
+      }
+
+      p {
+        line-height: 2.6em;
+        margin: 6% 2% 0 2%;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {}
+
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .section-space-intro {
+    padding: 19% 4% 8% 4%;
+    height: 186vw;
+
+    .title-container {
+      width: 94%;
+      margin-bottom: 17%;
+
+      .title {
+        content: url("../images/Caerus_m_cut_03-1.png");
+      }
+    }
+
+    .space-container {
+      width: 50%;
+
+      .space {
+        content: url("../images/Caerus_m_cut_03-2.png");
+      }
+    }
+
+    #marquee {
+      top: 0;
+      height: 100%;
+
+      .marquee-pic {
+        width: 140vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {}
+
+
+
+
+@media (max-width: 1199px) {
+  .section-material .title-container {
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+  .section-material {
+    align-items: center;
+    padding: 12% 2% 2% 2%;
+    height: 186vw;
+
+    .background {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 center;
+    }
+
+    .title-container {
+      width: 90%;
+      margin: 0;
+
+      .title {
+        content: url("../images/Caerus_m_cut_04-1.png");
+      }
+    }
+
+    .content {
+      margin-top: 5%;
+      margin-right: 0;
+      width: 88%;
+      line-height: 2.2em;
+      max-width: none;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 575px) {}
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+  .section-service {
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    grid-template-rows: 2fr 1fr 1fr 2.5fr 3fr 1fr 1.5fr 3fr 1fr 1.5fr 3fr 1fr 1.5fr 1fr;
+    height: 570vw;
+
+    .title {
+      z-index: 1;
+      justify-self: start;
+      align-self: center;
+      margin-left: 6%;
+      grid-area: 1 / 1 / 2 / 3;
+      width: 50%;
+      height: auto;
+    }
+
+    .private {
+      background-position: 0 center;
+      grid-area: 1 / 1 / 4 / 3;
+    }
+
+    .private-title {
+      background-size: 60% auto;
+      background-position: 100% 0;
+      margin-top: 12%;
+      grid-area: 3 / 1 / 5 / 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .private-content {
+      padding: 5% 0 5% 2%;
+      grid-area: 4 / 2 / 5 / 3;
+      display: grid;
+      grid-template-columns: auto 5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 100%;
+      align-items: center;
+
+      .plan {
+        margin-top: 5%;
+      }
+
+      .description {
+        padding-left: 0;
+        align-self: flex-start;
+      }
+
+      .plan-a {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .plan-b {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+
+      .plan-c {
+        grid-area: 5 / 1 / 6 / 2;
+      }
+
+      .plan-a-price {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .plan-b-price {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      .plan-c-price {
+        grid-area: 5 / 2 / 6 / 3;
+      }
+
+      .plan-a-description {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+
+      .plan-b-description {
+        grid-area: 4 / 2 / 5 / 3;
+      }
+
+      .plan-c-description {
+        grid-area: 6 / 2 / 7 / 3;
+      }
+    }
+
+    .limb {
+      background-position: 0 center;
+      grid-area: 5 / 1 / 7 / 3;
+    }
+
+    .limb-title {
+      background-size: 60% auto;
+      background-position: 100% 0;
+      margin-top: 12%;
+      grid-area: 6 / 1 / 8 / 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .limb-content {
+      align-self: center;
+      grid-area: 7 / 2 / 8 / 3;
+      align-content: flex-start;
+      margin-top: 0.5%;
+      height: 70%;
+
+      div {
+        width: 45%;
+      }
+    }
+
+    .torso {
+      background-position: 50% center;
+      grid-area: 8 / 1 / 10 / 3;
+    }
+
+    .torso-title {
+      background-size: 60% auto;
+      background-position: 100% 0;
+      margin-top: 12%;
+      grid-area: 9 / 1 / 11 / 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .torso-content {
+      align-self: center;
+      grid-area: 10 / 2 / 11 / 3;
+      align-content: flex-start;
+      margin-top: 0.5%;
+      height: 70%;
+
+      div {
+        width: 45%;
+      }
+    }
+
+    .face {
+      background-position: 0 center;
+      grid-area: 11 / 1 / 13 / 3;
+    }
+
+    .face-title {
+      background-size: 60% auto;
+      background-position: 100% 0;
+      margin-top: 12%;
+      grid-area: 12 / 1 / 14 / 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .face-content {
+      align-self: center;
+      grid-area: 13 / 2 / 14 / 3;
+      align-content: flex-start;
+      margin-top: 0.5%;
+      height: 70%;
+
+      div {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {}
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .section-faq {
+    .title {
+      height: 12vw;
+      margin: 6% 0 6% 0;
+    }
+
+    .question-container {
+      margin: 1% 8% 0 8%;
+      padding: 2.5% 0 1% 1%;
+
+      .question {
+        padding-right: 7%;
+
+        .question-content {
+          margin-left: 7%;
+
+          &::before {
+            width: 5%;
+          }
+        }
+      }
+
+      .answer {
+        .answer-content {
+          margin-left: 7%;
+          padding-bottom: 5%;
+
+          &::before {
+            width: 5%;
+          }
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 1.2%;
+        transform: translateY(-2vw);
+        width: 5.5%;
+        height: 100%;
+        background-image: url(../images/Caerus_cut_06-5.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center 100%;
+      }
+
+      &.expanded {
+        .answer {
+          display: block;
+        }
+
+        &::after {
+          background-image: url(../images/Caerus_cut_06-4.png);
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 575px) {}
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  footer {
+    margin-top: 10vw;
+    height: 360vw;
+    padding: 38% 0 22% 0;
+    letter-spacing: 0.2em;
+
+    .logo {
+      width: 100%;
+      height: 17vw;
+    }
+
+    .everyone-is-vip {
+      padding-top: 5%;
+      width: 100%;
+      height: 40vw;
+      font-weight: 400;
+    }
+
+    .reservation-text {
+      width: 100%;
+      height: 4vw;
+    }
+
+    .reservation {
+      margin-top: 15vw;
+      width: 23vw;
+      height: 23vw;
+    }
+
+    .college {
+      flex-grow: 1;
+      width: 55%;
+      background-image: url(../images/Caerus_cut_08-1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center 100%;
+    }
+
+    .aestheticiants {
+      padding-top: 10%;
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 300;
+      line-height: 2em;
+    }
+
+    .blog {
+      margin-top: 10vw;
+      margin-bottom: 15vw;
+      width: 23vw;
+      height: 23vw;
+    }
+
+    .copyright {
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  footer .copyright {
+    font-size: 8px;
+  }
+}
+
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .section-footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/footer_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .container1 {
+      position: static;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 500px;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .container2 {
+        width: 100%;
+        height: 100%;
+
+        .container3 {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+
+          .logo2 {
+            margin-top: 125px;
+            width: 209px;
+          }
+
+          .reserve {
+            .reserve-btn {
+              margin-top: 56px;
+              width: 110px;
+            }
+          }
+
+          .change-now {
+            margin-top: 23px;
+            width: 228px;
+          }
+
+          .copyright {
+            margin-top: 63px;
+            font-size: 15.5px;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .section-footer .container1 .container2 .container3 .copyright {
+    font-size: 10px;
+  }
+}
